@@ -31,12 +31,24 @@ const team = [
     },
   ];
 
+const informationElement = document.querySelector(".informazioni")
+const nameElement = document.querySelector(".nome")
+const ruoloElement = document.querySelector(".ruolo")
+const imageElement = document.querySelector(".image")
+// Milestone 1
+// for (let i = 0; i < team.length; i++) {
+//     const utente = team[i];
+
+//     console.log(utente.name);
+//     console.log(utente.role);
+//     console.log(utente.image);  
+// }
+
 
 for (let i = 0; i < team.length; i++) {
     const utente = team[i];
-
-    console.log(utente.name);
-    console.log(utente.role);
-    console.log(utente.image);
     
+    nameElement.innerHTML+= `${utente.name} ` 
+    ruoloElement.innerHTML+= `${utente.role} `
+    informationElement.innerHTML+= `${utente.image} `
 }
