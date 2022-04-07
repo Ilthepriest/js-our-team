@@ -54,10 +54,28 @@ const imageElement = document.querySelector(".image")
 // }
 
 
-//Milestone 3
+//Bonus 2
+
+const containerElement = document.querySelector(".container")
 for (let i = 0; i < team.length; i++) {
     const utente = team[i];
+    let card = document.createElement("div");
+    card.classList.add("card");
+    containerElement.append(card);
+}
+
+let carte = document.querySelectorAll(".card");
+for (let i = 0; i < team.length; i++) {
+    const utente = team[i];
+
     let img = document.createElement("img");
     img.src = utente.image;
-    document.body.appendChild(img);
+    carte[i].append(img);
+
+    let scritta = document.createElement("div")
+    scritta.classList.add("boxScritta")
+    carte[i].append(scritta)
+    
+    scritta.innerHTML += `${utente.name} <br>`
+    scritta.innerHTML += `${utente.role}`
 }

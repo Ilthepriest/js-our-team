@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F5F1;
+}
+
+h1,p{
+    text-align: center;
+    padding: 20px;
+}
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxScritta{
+    background-color: white;
+    margin-top: -3px;
+    padding: 20px;
+}
+
+.card{
+   text-align: center;
+   padding: 10px;
+}
+
+form{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+input{
+    padding: 4px 60px;
+    margin-bottom: 10px;
+}
+
