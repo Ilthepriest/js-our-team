@@ -44,11 +44,20 @@ const imageElement = document.querySelector(".image")
 //     console.log(utente.image);  
 // }
 
+//Milestone 2
+// for (let i = 0; i < team.length; i++) {
+//     const utente = team[i];
+    
+//     nameElement.innerHTML+= `${utente.name} ` 
+//     ruoloElement.innerHTML+= `${utente.role} `
+//     informationElement.innerHTML+= `${utente.image} `
+// }
 
+
+//Milestone 3
 for (let i = 0; i < team.length; i++) {
     const utente = team[i];
-    
-    nameElement.innerHTML+= `${utente.name} ` 
-    ruoloElement.innerHTML+= `${utente.role} `
-    informationElement.innerHTML+= `${utente.image} `
+    let img = document.createElement("img");
+    img.src = utente.image;
+    document.body.appendChild(img);
 }
